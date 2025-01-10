@@ -1,51 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=240, initial-scale=1.0">
-<title>My Jio Phone Website</title>
-<style>
-body {
-margin: 0;
-padding: 0;
-font-family: Arial, sans-serif;
-width: 240px;
-height: 320px;
-background-color: #f4f4f4;
-overflow: hidden;
-}
-header {
-background-color: #4CAF50;
-color: white;
-text-align: center;
-padding: 10px 0;
-font-size: 18px;
-}
-main {
-text-align: center;
-padding: 10px;
-}
-footer {
-background-color: #333;
-color: white;
-text-align: center;
-padding: 5px 0;
-position: fixed;
-bottom: 0;
-width: 240px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=240, initial-scale=1.0">
+    <title>My Jio Phone Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            width: 240px;
+            height: 320px;
+            background-color: #f4f4f4;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 18px;
+        }
+
+        main {
+            text-align: center;
+            padding: 10px;
+        }
+
+        select, input[type="checkbox"], input[type="date"], input[type="time"] {
+            margin: 10px 0;
+            padding: 5px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 90%;
+        }
+
+        select:hover, input:hover {
+            border-color: #4CAF50;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+            position: fixed;
+            bottom: 0;
+            width: 240px;
+        }
+
+        .dropdown-container, .date-time-container {
+            background-color: #e0f7fa;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 5px;
+        }
+    </style>
 </head>
+
 <body>
-<header>
-RAVI KUMAR 132KV
-</header>
-<main>
-<p>This website is optimized for 240x320 resolution.</p>
-<p>Enjoy browsing!</p>
-</main>
-<footer>
-&copy; YE FOOTER HAI
-</footer>
+    <header>
+        RAVI KUMAR 132KV
+    </header>
+    <main>
+        <p>This website is optimized for 240x320 resolution.</p>
+        <p>Enjoy browsing!</p>
+
+        <!-- Dropdowns -->
+        <div class="dropdown-container">
+            <h4>Choose an Option:</h4>
+            <select>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+
+            <h4>Select a Category:</h4>
+            <select>
+                <option value="cat1">Category 1</option>
+                <option value="cat2">Category 2</option>
+                <option value="cat3">Category 3</option>
+            </select>
+
+            <h4>Pick Your Favorite Color:</h4>
+            <select>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+            </select>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="dropdown-container">
+            <h4>Check Options:</h4>
+            <label>
+                <input type="checkbox" name="option1"> Enable Notifications
+            </label><br>
+            <label>
+                <input type="checkbox" name="option2"> Subscribe to Newsletter
+            </label><br>
+            <label>
+                <input type="checkbox" name="option3"> Agree to Terms
+            </label>
+        </div>
+
+        <!-- Date and Time -->
+        <div class="date-time-container">
+            <h4>Select a Date:</h4>
+            <input type="date">
+            <h4>Select a Time:</h4>
+            <input type="time">
+        </div>
+    </main>
+
+    <footer>
+        &copy; YE FOOTER HAI
+    </footer>
 </body>
+
 </html>
